@@ -111,7 +111,7 @@ Mặc định kubelet sẽ không thể khởi động nếu bộ nhớ swap đ�
   Lưu ý: thậm chí nếu `failSwapOn: false` được thêm, workload mặc định cũng không có quyền truy cập swap.
   Điều này có thể được thay đổi bằng cách đặt `swapBehavior`, một lần nữa trong file cấu hình kubelet. Để sử dụng swap,
   đặt một `swapBehavior` khác với giá trị mặc định `NoSwap`.
-  Xem [Quản lý bộ nhớ swap](/docs/concepts/architecture/nodes/#swap-memory) để biết thêm chi tiết.
+  Xem [Quản lý bộ nhớ swap](/docs/concepts/cluster-administration/swap-memory-management) để biết thêm chi tiết.
 * Để tắt swap, `sudo swapoff -a` có thể được sử dụng để tắt tạm thời.
   Để làm cho thay đổi này duy trì mỗi khi tái khởi động, đảm bảo rằng swap được tắt trong
   các file cấu hình như `/etc/fstab`, `systemd.swap`, phụ thuộc vào việc nó được cấu hình như thế nào trên hệ thống của bạn.
